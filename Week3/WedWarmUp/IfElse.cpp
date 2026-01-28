@@ -7,24 +7,29 @@ int main() {
     int age;
 
     cout << "Enter your age: ";
-    ___ >> age;                                // TODO 1/3 What keyword do you use to read in user input?
+    cin >> age;                                // TODO 1/3 What keyword do you use to read in user input?
 
     // Collect User Input #2
     string username;
 
     cout << "Enter your username: ";
-    ___ >> username;                            // TODO 1.5/3 Same thing here
+    cin >> username;                            // TODO 1.5/3 Same thing here
 
     // Compare Integers
-    if (_________) {                            // TODO 2/3 The condition is whether the user's age is greater than or equal to 18
+    if (age >= 18) {                            // TODO 2/3 The condition is whether the user's age is greater than or equal to 18
         cout << "You are an adult." << endl;
     }
+    else if (age >= 13){
+    
+        cout << "You are a teenager." << endl;
+    }
+
     else {
         cout << "You are not an adult." << endl;
     }
 
     // Substring example
-    string firstThree = username.substr(____);  // TODO 3/3 What parameter(s) do you pass to get the first three letters of the username?
+    string firstThree = username.substr(0,3);  // TODO 3/3 What parameter(s) do you pass to get the first three letters of the username?
     cout << "The first three letters of your username is: " << firstThree << endl;
 
     return 0;
